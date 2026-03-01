@@ -1,6 +1,6 @@
 # ✍️ Standup Writer
 
-**Auto-generate your daily standup from yesterday's git commits using AI.**
+**Auto-generate your daily standup from yesterday's git commits using Groq AI.**
 
 No more staring at a blank Slack message every morning wondering what you did yesterday.
 
@@ -9,7 +9,7 @@ No more staring at a blank Slack message every morning wondering what you did ye
 ## How It Works
 
 1. Press `Ctrl+Shift+P` → type **"Generate My Standup"**
-2. Enter your OpenAI API key (one time only)
+2. Enter your Groq API key (one time only)
 3. Get your standup in 5 seconds — ready to copy and paste
 
 That's it.
@@ -44,10 +44,10 @@ You get:
 1. Install the extension
 2. Open any git repository in VS Code
 3. Run `Ctrl+Shift+P` → **Standup Writer: Generate My Standup**
-4. Enter your OpenAI API key when prompted (stored securely in VS Code settings)
+4. Enter your Groq API key when prompted (stored securely in VS Code settings)
 
-### Getting an OpenAI API Key
-Go to [platform.openai.com](https://platform.openai.com) → API Keys → Create new key.
+### Getting a Groq API Key
+Visit [console.groq.com](https://console.groq.com) and sign up for a free account, then create an API key.
 
 ---
 
@@ -55,22 +55,22 @@ Go to [platform.openai.com](https://platform.openai.com) → API Keys → Create
 
 | Setting | Default | Description |
 |---|---|---|
-| `standupWriter.openaiApiKey` | `""` | Your OpenAI API key |
-| `standupWriter.model` | `gpt-3.5-turbo` | Model to use (`gpt-3.5-turbo` or `gpt-4`) |
+| `standupWriter.groqApiKey` | `""` | Your Groq API key |
+| `standupWriter.model` | `llama-3.1-8b-instant` | Model to use (see configuration options) |
 
 ---
 
 ## Requirements
 
 - A git repository open in VS Code
-- An OpenAI API key
+- A Groq API key
 - At least one commit in the last 24 hours
 
 ---
 
 ## Privacy
 
-Your commits are sent to OpenAI's API to generate the standup. No data is stored anywhere else. Your API key is stored locally in VS Code settings only.
+Your commits are sent to Groq's API to generate the standup. No data is stored anywhere else. Your API key is stored locally in VS Code settings only.
 
 ---
 
