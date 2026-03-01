@@ -3,76 +3,15 @@
   "displayName": "Standup Writer 🚀",
   "description": "Auto-generate your daily standup from yesterday's git commits using AI",
   "version": "0.0.1",
-  "publisher": "SaiAkhil",  "repository": {
+  "publisher": "SaiAkhil",
+  "repository": {
     "type": "git",
     "url": "https://github.com/saiakhil423/standup-writer"
-  },  "engines": {
+  },
+  "engines": {
     "vscode": "^1.85.0"
   },
-
   "bugs": {
     "url": "https://github.com/saiakhil423/standup-writer/issues"
   },
   "homepage": "https://github.com/saiakhil423/standup-writer",
-  "categories": [
-    "Other"
-  ],
-  "keywords": [
-    "standup",
-    "git",
-    "AI",
-    "daily standup",
-    "scrum",
-    "commits",
-    "productivity"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "standup-writer.generate",
-        "title": "✍️ Generate My Standup",
-        "category": "Standup Writer"
-      }
-    ],
-    "configuration": {
-      "title": "Standup Writer",
-      "properties": {
-        "standupWriter.groqApiKey": {
-          "type": "string",
-          "default": "",
-          "description": "Your Groq API key (get one free at console.groq.com)"
-        },
-        "standupWriter.model": {
-          "type": "string",
-          "default": "llama-3.1-8b-instant",
-          "enum": [
-            "llama-3.1-8b-instant",
-            "llama-3.3-70b-versatile"
-          ]
-        }
-      }
-    },
-    "menus": {
-      "commandPalette": [
-        {
-          "command": "standup-writer.generate"
-        }
-      ]
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/vscode": "^1.85.0",
-    "typescript": "^5.3.0"
-  },
-  "dependencies": {
-    "groq-sdk": "^0.3.3"
-  }
-}
