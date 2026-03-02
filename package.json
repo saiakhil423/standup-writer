@@ -2,7 +2,7 @@
   "name": "standup-writer",
   "displayName": "Standup Writer 🚀",
   "description": "Auto-generate your daily standup from yesterday's git commits using AI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "SaiAkhil",
   "repository": {
     "type": "git",
