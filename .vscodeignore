@@ -1,4 +1,7 @@
-node_modules/**
-src/**
+.vscode/**
+.vscode-test/**
 .gitignore
-tsconfig.json
+.yarnrc
+webpack.config.js
+**/.eslintrc.json
+**/*.map
