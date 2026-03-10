@@ -54,7 +54,6 @@ Visit [console.groq.com](https://console.groq.com) and sign up for a free accoun
 ## Settings
 
 | Setting | Default | Description |
-|---|---|---|
 | `standupWriter.groqApiKey` | `""` | Your Groq API key |
 | `standupWriter.model` | `llama-3.1-8b-instant` | Model to use (see configuration options) |
 
